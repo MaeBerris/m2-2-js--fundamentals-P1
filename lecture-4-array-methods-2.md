@@ -19,6 +19,12 @@ We want to filter out all negative numbers:
 
 How do we do that?
 
+arr
+
+let newPositivearray = arr.filter(function(item){
+  return item >0
+});
+
 ---
 
 `for` loops are very _flexible_, but they're not very _focused_.

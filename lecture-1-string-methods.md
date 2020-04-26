@@ -25,7 +25,7 @@ Sometimes it's more useful than others.
 Strings have a bunch of methods and properties that will be immediately useful. 😉
 
 - `.length`
-- `.replace()`
+- `.replace()` let food = "i love pizza" food.replace("pizza", "hot-dogs") outpouts "I love hot-dogs" 
 - `.slice()`
 - `.includes()`
 - `split()`
@@ -135,12 +135,22 @@ We'll test the **breakout rooms** feature 😀
 ```js
 const input = 'Hi World';
 
+input.replace("Hi","Hello") + '!'
 // output: "Hello world!"
 ```
 
 ```js
 const input = 'I am 23 years old!';
 
+const output = input.slice(0,4) + ' ' + input.slice(13)
+
+
+
+const input = 'I am 23 years old!';
+
+let start= input.slice(0, 4)
+let end = input.slice (14)
+let outpout = start + end
 // output: "I am old!"
 ```
 

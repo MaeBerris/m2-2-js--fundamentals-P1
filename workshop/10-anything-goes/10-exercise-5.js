@@ -13,6 +13,10 @@
 
 let armstrongNumbers = [];
 
+for(i = 0; i <=999; i++){
+    
+}
+
 // write your loop here...
 
 console.log(armstrongNumbers);

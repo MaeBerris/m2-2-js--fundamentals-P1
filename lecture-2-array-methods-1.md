@@ -65,6 +65,11 @@ Let's dip into the internet and see if we can learn all of these methods collect
 5. `.reverse()`, `.lastIndexOf()`
 6. `.splice()`, `.toString()`
 
+```js
+
+let arr= []
+```
+
 - Split into teams.
 - Take given methods
   - find an explanation/definition, then write your own.

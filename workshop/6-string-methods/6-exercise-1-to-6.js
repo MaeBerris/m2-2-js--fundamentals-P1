@@ -6,7 +6,7 @@
 
 // Write to the console, the desired length of each of the following strings.
 // When this exercise is complete, it should write all of the answers to the console one after the other.
-
+console.log(smartGuy.length, rickSaying.length, enemies.length, alternateRicks.length, notCode.length)
 // Given the following data to answer the questions.
 const smartGuy = 'Rick Sanchez';
 const rickSaying = 'wubba lubba dub dub';
@@ -51,6 +51,9 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Convert the alternateRicks string to an array, so that each name ("Simple
 // Rick") is an element in that array. Log that array to the console.
 
+const alternateRicksArray = alternateRicks.split(', ')
+console.log(alternateRicksArray)
+
 //
 //
 //
@@ -58,13 +61,19 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Q3
 // How many Ricks have been named in alternateRicks?
 // HINT: There are multiple ways to solve this one. Maybe try a `for` loop!
-
+  console.log(alternateRicksArray.length)
 //
-//
+//answer: 24 ricks
 //
 //
 // Q4
 // How many characters are there in rickSaying (without spaces)?
+  let rickSayingArray = rickSaying.split(" ")
+
+let wordTotal = 0
+for (i = 0; i < rickSayingArray.length; i++){
+  wordTotal = wordTotal + rickSayingArray[i].length
+}
 
 //
 //
@@ -73,14 +82,21 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Q5
 // It turns out, Morty doesn't actually have a middle name. The `grandson`
 // string is wrong! Console Morty's name without "Antoine".
+const grandson = 'Morty Antoine Smith';
+grandson.indexOf("A") 6
+grandson.indexOf("e") 12
 
+const name = grandson.slice(0, 5) + grandson.slice(13)
+console.log(name)
 //
 //
 //
 //
 // Q6
 // Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
-
+const enemies =
+  'Tammy Gueterman, Evil Morty, Zeep Xanflorp, Galactic Federation, Council of Ricks, Phoenixperson, Scary Terry, Abradolf Lincler, Supernova';
+let trueEnemies = enemies.replace("Scary Terry,", "")
 //
 //
 //

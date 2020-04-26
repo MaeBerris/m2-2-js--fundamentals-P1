@@ -27,7 +27,11 @@ let rectangle = { length: 10, width: 4 };
 ### Example 2
 
 ```js
-// Formula for area of circle: Pi times the radius squared
+function calculateArea(radius){
+    return 3.1416 * radius ** 2;
+}
+
+calculateArea(4)
 ```
 
 ---
@@ -47,9 +51,21 @@ let rectangle = { length: 10, width: 4 };
 ```js
 // Q1. Write a function that returns the sum of 3 numbers.
 
+function addAllThreeNumbs(a,b,c){
+    return a + b + C
+}
+
 // Q2. Write a function that returns the square of a number minus twice the number.
 
+function mathy(n){
+    return n ** 2 - n * 2;
+}
 // Q3. Write a function that returns the a person's full name, given their first and last names.
+
+function combineNames (firstName, lastName){
+    return firstName + ` ` + lastName
+}
+
 ```
 
 ---
@@ -58,10 +74,24 @@ let rectangle = { length: 10, width: 4 };
 
 ```js
 // Q4. Write a function that returns the value of the tax for a given amount.
+    function taxValue (price){
+        let tax = 0.15 * price;
+        return tax
+    }
 
 // Q5. Write a function that returns the value 42.
 
+    function value42 (){
+        return 42
+    }
+
 // Q6. Write a function that returns "Hello!".
+
+    function hello (){
+        return "hello !"
+    }
+
+
 ```
 
 ---
